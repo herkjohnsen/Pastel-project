@@ -1,5 +1,12 @@
-html, body
-{
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import '_variables';
+
+
+body{
+   font-family: 'Open Sans',serif;
+}
+
+html, body {
     width: 100%;
     height: 100%;
     
@@ -7,11 +14,15 @@ html, body
     padding: 0;
 }
 
-body
-{
+body {
     background: #f6f6f6;
-    }
+}
 
+ol, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 .LeftPanel
 {
@@ -26,4 +37,18 @@ body
     align-content: stretch; /* Extra space in Cross Axis */
             
     background: #ffffff;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1.26rem;
+}
+
+.ListHeader {
+    padding: 0.6rem;
+    background: red;
+}
+
+.MessageList__MessageItem_avatar {
+    height: 1.4rem;
+    width: 1.4rem;
 }
