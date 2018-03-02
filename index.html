@@ -8,39 +8,77 @@
 <body>
 	<div class="LeftPanel">
 
+		<input class="SearchField" placeholder="search" type="Serach" name="GlobalSearch">
+
 		<!-- Messages -->
 
 		<div class="ListHeader ListHeader__Messages">Messages</div>
 
-		<ol class="MessageList">
-			<li class="MessageList__MessageItem">
+		<div class="MessageList">
+			<button class="MessageList__MessageItem">
 				<img class="MessageList__MessageItem_avatar" src="assets/DemoAvatars/Alex_Lucas.jpg">
 				<span class="MessageList__MessageItem_name">Alex Lucas</span>
-			</li>
-			<li class="MessageList__MessageItem">
+			</button>
+			<button class="MessageList__MessageItem">
 				<img class="MessageList__MessageItem_avatar" src="assets/DemoAvatars/Anne_Gibson.jpg">
 				<span class="MessageList__MessageItem_name">Anne Gibson</span>
-			</li>
-			<li class="MessageList__MessageItem">
+			</button>
+			<button class="MessageList__MessageItem">
 				<img class="MessageList__MessageItem_avatar" src="assets/DemoAvatars/Bill_Cruz.jpg">
 				<span class="MessageList__MessageItem_name">BillCruz</span>
-			</li>
-		</ol>
+			</button>
+		</div>
 
 
 		<!-- Mentions -->
 
-		<div class="ListHeader ListHeader__Mentions">Menrions</div>
+		<div class="ListHeader ListHeader__Mentions">Mentions</div>
+
 
 		<!-- Community -->
 
-		<div class="CommunityList"></div>
+		<div class="CommunityList">
 
-			<div class="CommunityList__item">			
-				<div Class="CommunityList__item__Circle">S</div>
-				<div Class="CommunityList__item__Name">Strategy 3604</div>
-			<div>
-				
+			<div class="CommunityList__header">			
+				<div Class="CommunityList__header__Circle">S</div>
+				<div Class="CommunityList__header__Name">Strategy 3604</div>
+			</div> 
+
+			<div class="CommunityList__itemList">	
+				<button class="CommunityList__item">#Topic 1</button>
+				<button class="CommunityList__item">#Topic 2</button>
+				<button class="CommunityList__item">#Topic 3</button>
+				<button class="CommunityList__item">#Topic 4</button>
+				<button class="CommunityList__item">#Topic 5</button>
+			</div>
+
+			<div class="CommunityList__header">			
+				<div Class="CommunityList__header__Circle">S</div>
+				<div Class="CommunityList__header__Name">Marketing 3202</div>
+			</div> 
+			
+			<div class="CommunityList__itemList">	
+				<button class="CommunityList__item">#Topic 1</button>
+				<button class="CommunityList__item">#Topic 2</button>
+				<button class="CommunityList__item">#Topic 3</button>
+				<button class="CommunityList__item">#Topic 4</button>
+				<button class="CommunityList__item">#Topic 5</button>
+			</div>
+
+			<div class="CommunityList__header">			
+				<div Class="CommunityList__header__Circle">S</div>
+				<div Class="CommunityList__header__Name">Consumer Behaviour</div>
+			</div> 
+			
+			<div class="CommunityList__itemList">	
+				<button class="CommunityList__item">#Topic 1</button>
+				<button class="CommunityList__item">#Topic 2</button>
+				<button class="CommunityList__item">#Topic 3</button>
+				<button class="CommunityList__item">#Topic 4</button>
+				<button class="CommunityList__item">#Topic 5</button>
+
+			</div>
+
 		</div>
 
 
@@ -52,6 +90,28 @@
 	</div>
 
 	<div class="RightPanel"> </div>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("CommunityList__header");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+
 </body>
 </html>
 
