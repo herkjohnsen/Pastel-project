@@ -24,6 +24,11 @@ ol, li {
     padding: 0;
 }
 
+button {
+
+}
+
+
 .LeftPanel
 {
     width: 26rem;
@@ -38,17 +43,143 @@ ol, li {
             
     background: #ffffff;
 
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 1.26rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 1.2rem;
+}
+
+
+.SearchField {
+    padding-left: 1.2rem;
+    height: 40px;
+    background: #EFF3F6;
+    border-radius: 4px;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+    font-size: 14px;
 }
 
 .ListHeader {
-    padding: 0.6rem;
-    background: red;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    font-weight: 900;
+    font-size: 14px;
 }
+
+.ListHeader__Messages {
+    color: #4a90e2;
+}
+
+.MessageList{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.6rem;
+}
+
+.MessageList__MessageItem {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 14px;
+    color: #7a849e;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.MessageList__MessageItem:hover {
+    color: #353E54;
+
+    .MessageList__MessageItem_avatar {
+    opacity: 1;
+    }
+}
+
 
 .MessageList__MessageItem_avatar {
     height: 1.4rem;
     width: 1.4rem;
+    border-radius: 0.2rem;
+    margin-right: 0.6rem;
+    opacity: 0.5;
 }
+
+
+.ListHeader__Mentions {
+    color: #8C67C3;
+}
+
+.CommunityList{
+    display: flex;
+    flex-direction: column;
+}
+
+.CommunityList__header {
+    height: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0.6rem;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    font-size: 14;
+    font-weight: 900;
+    border-radius: 0.2rem;
+}
+
+.CommunityList__header:hover {
+    color: #353E54;
+    background-color: #EFF3F6;
+
+    .CommunityList__header__Name {
+    color: #353E54;
+    }
+}
+
+.CommunityList__header__Circle {
+    height: 1.4rem;
+    width: 1.4rem;
+    background: #C4D4E1;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    }
+
+.CommunityList__header__Name {
+    padding-left: 0.6rem;
+    font-size: 14px;
+    color: #7a849e;
+}
+
+.CommunityList__itemList {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.6rem;
+
+}
+
+.CommunityList__item {
+    color: #7a849e;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    border: none;
+    font-size: $font-size-s;
+}
+
+.CommunityList__item:hover {
+    color: #353E54;
+    background-color: #EFF3F6;
+}
+
+
+
